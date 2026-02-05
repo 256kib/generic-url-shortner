@@ -34,6 +34,9 @@ submitButton.addEventListener("click",async (event:Event)=>{
     try{
         let checkValidity:URL = new URL(inputValue) // checks if the url is valid, this throws an error if the url is malformed
         let tinyUrl:string = await getTinyUrl(checkValidity) // generates the tinyUrl
+        if(tinyUrl.length<=0){
+            throw new Error("TinyUrl wasn't returned")
+        }
         let copyButton:HTMLElement = document.querySelector("[class^='copy']")
         //adds a simple event listener to the button to copy the url
         copyButton.addEventListener("click",()=>{
@@ -46,7 +49,6 @@ submitButton.addEventListener("click",async (event:Event)=>{
 
         copyButton.classList = "copy"
     }catch(err){
-        console.log("URL not valid")
+        console.log(err)
     }
-    
 })
