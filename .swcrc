@@ -1,14 +1,8 @@
 {
     "jsc": {
         "parser": {
-            "syntax": "typescript",
-            "tsx": true
+            "syntax": "typescript"
         },
-        "target": "es2015"
-    },
-    "module": {
-        "type": "es6", 
-        "resolveFully": true,
-        "outFileExtension": "mjs"
+        "target": "es2024"
     }
 }
