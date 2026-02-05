@@ -1,6 +1,5 @@
 # About this project
 This is a very simple chrome extension that uses tinyURL api to generate a tinyurl that can be copied by a simple button click
-### Languages used
 
 # How to use and build
 1) clone this repository
