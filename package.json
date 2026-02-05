@@ -1,0 +1,17 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "swc src -d build --copy-files --strip-leading-paths --config-file .swcrc"
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.7.10",
+    "@swc/core": "^1.15.11"
+  }
+}

@@ -1,0 +1,6 @@
+{
+    "compilerOptions": {
+        "types": ["chrome"],
+        "lib": ["ES6","DOM"]
+    }
+}
